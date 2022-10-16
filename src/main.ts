@@ -36,7 +36,6 @@ import { deleteFaction } from './Factions/deleteFaction'
 import { leaderFaction } from './Factions/leader'
 import { plothooks } from './PlotHook/plothooks'
 import { marketEvent } from './MiniEstablishments/Market/marketEventData'
-import { createTownBiome } from './Town/js/createTownBiome'
 import { createTown } from './Town/js/createTown'
 import { findViaKey, findIfExistsViaKey } from './Tools/findViaKey'
 import { createBlacksmithProject } from './Blacksmith/js/blacksmithProject'
@@ -56,6 +55,7 @@ import { createFaction } from './Factions/createFaction'
 import { getPoliticalSourceDescription } from './Town/js/getPoliticalSourceDescription'
 import { exportToNovelAI } from './Tools/Exports/exportNovelAI'
 import { populateGoodsAndServices } from './Buildings/populateGoodsAndServices'
+import { getTownMilitary } from './Town/js/getTownMilitary'
 // import { buildingTypes, createBuildingKeys, createNewBuilding } from './Town/js/createNewBuilding'
 
 declare global {
@@ -106,7 +106,6 @@ declare global {
     leaderFaction: typeof leaderFaction
     plothooks: typeof plothooks
     marketEvent: typeof marketEvent
-    createTownBiome: typeof createTownBiome
     createTown: typeof createTown
     findViaKey: typeof findViaKey
     findIfExistsViaKey: typeof findIfExistsViaKey
@@ -128,6 +127,7 @@ declare global {
     createFaction: typeof createFaction
     getPoliticalSourceDescription: typeof getPoliticalSourceDescription
     exportToNovelAI: typeof exportToNovelAI
+    getTownMilitary: typeof getTownMilitary
     // createBuildingKeys: typeof createBuildingKeys
     // createNewBuilding: typeof createNewBuilding
   }
@@ -153,6 +153,7 @@ Object.assign(setup, {
   history,
   addGtagEvent,
   profileAgeTooltip,
+  getTownMilitary,
   metricHeight,
   metricWeight,
   buildingTooltip,
@@ -180,7 +181,6 @@ Object.assign(setup, {
   leaderFaction,
   plothooks,
   marketEvent,
-  createTownBiome,
   createTown,
   findViaKey,
   findIfExistsViaKey,

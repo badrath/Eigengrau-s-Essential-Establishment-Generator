@@ -216,13 +216,13 @@ export function exportToNovelAI (town: Town, npcs: Record<string, NPC>) {
     scenarioVersion: 0,
     title: `The ${town.type} of ${town.name}`,
     /** Brief overview */
-    description: `The ${town.type} of ${town.name} is a ${town.economicIdeologyIST} ${town.politicalIdeology} ${town.politicalSource}. It has a population of ${town.population}, and its citizens live a ${lib.getTownWealth(town.roll.wealth)} life. The ${town.type} grew around ${lib.articles.output(town.origin)}, and is comprised ${lib.getPredominantRace(town.demographicPercentile).amountDescriptive}.`,
+    description: `The ${town.type} of ${town.name} is a ${town.economicIdeologyIST} ${town.politicalIdeology} ${town.politicalSource}. It has a population of ${town.population}, and its citizens live a ${lib.getTownWealth(town.roll.wealth)} life. The ${town.type} grew around ${lib.articles.output(town.origin)}, and is comprised ${lib.getPredominantRace(lib.getDemographicPercentile(town)).amountDescriptive}.`,
     /** The prompt part of it */
     prompt: `${briefDescription}
     A population of ${town.population}, the denizens live ${lib.articles.output(lib.getTownWealth(town.roll.wealth))} existence. 
     ${town.economicIdeologyDescription(town)} ${setup.getPoliticalSourceDescription(town)}
     ${lib.getTownEconomics(town)} ${lib.getTownWelfare(town)}
-    ${lib.getTownMilitary(town)} ${lib.getTownLaw(town)} ${lib.getTownArcana(town)}`,
+    ${setup.getTownMilitary(town)} ${lib.getTownLaw(town)} ${lib.getTownArcana(town)}`,
     tags: [
       'fantasy',
       'dungeons and dragons',
