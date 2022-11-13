@@ -281,7 +281,7 @@ export const ratfolk: RaceTrait = {
     raceAdjective: 'ratfolkin',
     raceLanguage: 'Ysoki'
   },
-  knownLanguages: ['Common', 'Ratfolk'],
+  knownLanguages: ['Common', 'Ysoki', 'Aklo', 'Draconic', 'Dwarven', 'Gnoll', 'Gnomish', 'Goblin', 'Halfling', 'Orcish', 'Undercommon'],
   beard: ['scraggly beard', 'long, flowing beard', 'goatee', 'goatee that seems to be trying to level up into a beard', 'rather wild, unkempt beard', 'dreadful beard'],
   abilities: {
     'Low-Light Vision': 'Accustomed to life underground, you have superior vision in dim conditions. You can see in dim light as though it were bright light, so you ignore the concealed condition due to dim light.'
