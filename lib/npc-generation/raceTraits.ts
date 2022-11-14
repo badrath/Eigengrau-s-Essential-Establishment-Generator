@@ -14,8 +14,12 @@ import { lizardfolk } from './races/lizardfolk'
 import { goblin } from './races/goblin'
 import { ratfolk } from './races/ratfolk'
 import { kitsune } from './races/kitsune'
+import { strix } from './races/strix'
+import { merfolk } from './races/merfolk'
+import { kobold } from './races/kobold'
+import { gnoll } from './races/gnoll'
 
-export type RaceName = 'dragonborn' | 'dwarf' | 'elf' | 'gnome' | 'half-elf' | 'halfling' | 'half-orc' | 'human' | 'tiefling' | 'goblin' | 'orc' | 'lizardfolk' | 'ratfolk' | 'kitsune'
+export type RaceName = 'dragonborn' | 'dwarf' | 'elf' | 'gnome' | 'half-elf' | 'halfling' | 'half-orc' | 'human' | 'tiefling' | 'goblin' | 'orc' | 'lizardfolk' | 'ratfolk' | 'kitsune' | 'strix' | 'merfolk' | 'kobold' | 'gnoll'
 
 export interface RaceTrait {
   muscleMass: number
@@ -70,5 +74,9 @@ export const raceTraits: Record<RaceName, RaceTrait> = {
   orc,
   lizardfolk,
   ratfolk,
-  kitsune
+  kitsune,
+  strix,
+  merfolk,
+  kobold,
+  gnoll
 }
