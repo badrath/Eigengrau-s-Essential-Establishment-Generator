@@ -20,13 +20,13 @@ export const marriagePools: Record<RaceName, RaceName[]> = {
   'half-elf': ['human', 'elf', 'half-elf', 'half-orc'],
   'half-orc': ['human', 'orc', 'half-elf', 'half-orc'],
   'tiefling': ['human', 'tiefling'],
-  'lizardfolk': ['lizardfolk','dragonborn','kitsune','strix'],
+  'lizardfolk': ['lizardfolk', 'dragonborn', 'kitsune', 'strix'],
   'ratfolk': ['ratfolk', 'goblin', 'halfling', 'gnome'],
-  'kitsune': ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk','strix','merfolk','gnoll','kobold'],
-  'strix' : ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk','strix','merfolk','gnoll','kobold'],
-  'merfolk' : ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk','strix','merfolk','gnoll','kobold'],
-  'kobold' : ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk','strix','merfolk','gnoll','kobold'],
-  'gnoll' : ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk','strix','merfolk','gnoll','kobold']
+  'kitsune': ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk', 'strix', 'merfolk', 'gnoll', 'kobold'],
+  'strix': ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk', 'strix', 'merfolk', 'gnoll', 'kobold'],
+  'merfolk': ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk', 'strix', 'merfolk', 'gnoll', 'kobold'],
+  'kobold': ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk', 'strix', 'merfolk', 'gnoll', 'kobold'],
+  'gnoll': ['human', 'kitsune', 'elf', 'tiefling', 'dragonborn', 'lizardfolk', 'dwarf', 'gnome', 'halfling', 'ratfolk', 'strix', 'merfolk', 'gnoll', 'kobold']
 }
 
 export function findParentRaces (npc: NPC) {
